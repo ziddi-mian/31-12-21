@@ -302,3 +302,40 @@ function startOfWeek(date)
 dt = new Date(); 
 
 console.log(startOfWeek(dt).toString());
+
+
+/ Write a JavaScript function to get the month start date.
+
+function startOfMonth(date)
+  {
+     
+   return new Date(date.getFullYear(), date.getMonth(), 1);
+ 
+  }
+
+dt = new Date(); 
+
+console.log(startOfMonth(dt).toString());
+
+
+let num1=parseInt(prompt("Enter first number"))
+let num2=parseInt(prompt("Enter second number"))
+let oper=prompt("which operation you want to do(+,-,*,/)")
+switch (true) {
+    case (oper=='+'):
+        console.log(num1+"+"+num2+"="+ (num1+num2));
+        break;
+    case (oper=='-'):
+        console.log(num1+"-"+num2+"="+ (num1-num2));
+        break;
+    case (oper=='*'):
+        console.log(num1+"*"+num2+"="+ (num1*num2));
+        break;
+    case (oper=='/'):
+        console.log(num1+"/"+num2+"="+ (num1/num2));
+        break;
+
+    default:
+        console.log("Enter valid operation.");
+        break;
+}
