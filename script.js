@@ -67,3 +67,23 @@ console.log(timezone_offset_in_seconds(dt));
 
 dt = new Date(1989, 10, 1); 
 console.log(timezone_offset_in_seconds(dt))
+
+
+// Write a JavaScript function to add specified years to a date.   
+// Test Data :
+// dt = new Date(2014,10,2);
+// console.log(add_years(dt, 10).toString());
+// Output :
+// "Sat Nov 02 2024 00:00:00 GMT+0530 (India Standard Time)"
+
+
+function add_years(dt,n) 
+ {
+ return new Date(dt.setFullYear(dt.getFullYear() + n));      
+ }
+
+dt = new Date();
+console.log(add_years(dt, 10).toString());  
+
+dt = new Date(2014,10,2);
+console.log(add_years(dt, 10).toString());
